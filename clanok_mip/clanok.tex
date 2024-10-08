@@ -1,0 +1,110 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,english,a4paper]{article}
+
+\usepackage[english]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Engagement in digital marketing: current advertising trends and recommendation algorithms} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Zakharii Okseniuk\\[2pt]}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}Nowadays, digital marketing plays the most important role in internet sales. High-quality advertising is the only way the attention of common users can be attracted, throughout all the spam on websites. That is why all services offer personalised recommendations based on the user behaviour in the Internet and social media. By studying how users interact with websites, some services can provide targeted advertising and recommend content to the individual interests of each user. This personalised attention not only improves the user experience, but also increases sales by attracting the right audience to the brand. As online commerce continues to grow fastly, millions of users and an overflowing amount of products and services, companies are under big pressure to make their product unique and really needful. The growth of digital marketing has created a demand for more complicated marketing methods, where personalisation is a key factor to make better and stronger connections with users. As a result, many companies have begun to use AI and various algorithms to better understand the market and provide preferences for each user. The aim of this project is to investigate how digital marketing strategies based on consumer behaviour analysis and personalization works and can be used to increase people engagement and improve business results in a competitive and cruel online-commerce world.\end{abstract}
+
+
+
+\section{Introduction}
+
+
+
+\section{Nejaká časť} \label{nejaka}
+
+Z obr.~\ref{f:rozhod} je všetko jasné. 
+
+\begin{figure*}[tbh]
+\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+
+\cite{href}.
+
+\caption{Rozhodujúci argument.}
+\label{f:rozhod}
+\end{figure*}
+
+
+
+\section{Iná časť} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
+
+\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliographystyle{plain}
+\bibliography{MainBIB}
+\end{document}
