@@ -9,7 +9,9 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\pgfplotsset{compat=1.18}
 \usepackage{cite}
 %\usepackage{times}
 
@@ -29,7 +31,26 @@
 
 \section{Introduction}
 
+\begin{tikzpicture}
+    \pie[
+        text=legend, 
+        radius=3, 
+        explode=0.1 
+    ]{
+        20/Category A,
+        30/Category B,
+        20/Category C,
+        30/Category D
+    }
+\end{tikzpicture}
 
+
+\begin{figure}[h]  % Начинаем окружение для вставки рисунка
+    \centering     % Центрируем изображение
+    \includegraphics[width=0.5\textwidth]{STU-FIIT-anch.png}  % Вставляем изображение, указывая ширину в процентах от ширины текста
+    \caption{descr}  % Добавляем подпись к рисунку
+    \label{fig:example}  % Можем ссылаться на изображение с помощью \ref{fig:example}
+\end{figure}
 
 \section{Nejaká časť} \label{nejaka}
 
